@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Classroom App</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for demonstration purposes */
+        body{
+    font-family: Arial, sans-serif;
+    background-image: url('cls.jpg'); /* Change the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+    float:left;
+    padding: 20px;
+    background-color: #e0e0e0;
+    background-image: url('im.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+        #main {
+            flex: 1;
+            padding: 20px;
+        }
+          .container1 {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .sidebar1 {
+      float: right;
+      width: 200px;
+      
+    background-color: #e0e0e0;
+    background-image: url('dw.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    .content1 {
+      margin-left: 200px;
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+                <div class="sidebar">
+            <h2>Participants</h2>
+            <ul id="participantsList"></ul>
+        </div>
+        <div id="main">
+            <h1>Welcome to the Online Classroom</h1>
+            <div id="videoContainer">
+            <video id="localVideo" autoplay muted></video>
+            <video id="remoteVideo" autoplay></video>
+        </div>
+        <div class="sidebar1">
+            <div id="durationContainer">
+                <p>Class Duration: <span id="duration">00:00:00</span></p>
+            </div>
+            <div id="chatContainer">
+                <div id="chatHistory"></div>
+                <input type="text" id="messageInput" placeholder="Type a message...">
+                <button id="sendMessage">Send</button>
+            </div>
+        </div>
+        <label for="studentName">Your Name:</label>
+        <input type="text" id="studentName" placeholder="Enter your name">
+        <button id="joinButton">Join Classroom</button>
+        <button id="leaveButton" disabled>Leave Classroom</button>
+        <button id="toggleAudio">Toggle Audio</button>
+        <button id="toggleVideo">Toggle Video</button>
+        <button id="shareScreen">Share Screen</button>
+         
+    
+    </div>
+    <div class="share-section">
+    <h2>Share Link to Join Class</h2>
+    <select id="shareSubjectSelect">
+        <option value="">Select Subject</option>
+        <!-- Populate options dynamically using JavaScript -->
+    </select>
+    <button id="generateLinkButton">Generate Link</button>
+    <input type="text" id="linkOutput" readonly>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('/cls.jpg'); /* Change the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#classroom {
+    flex: 2;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#chatContainer {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+#videoContainer video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.sender {
+    font-weight: bold;
+    color: #3366cc; /* Adjust the color as needed */
+    margin-right: 5px;
+}
+/* ... (existing CSS code) ... */
+
+.initials-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #3366cc;
+    color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.classroom {
+    flex: 2;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.sidebar1 {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+#durationContainer {
+    margin-bottom: 20px;
+}
+
+#chatHistory {
+    height: 70%;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+     .sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0e0e0;
+    background-image: url('dw.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#messageInput {
+    width: 100%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#sendMessage {
+    padding: 5px 10px;
+}
+
+/* ... (rest of your styles) ... */
+
+
+#chatHistory {
+    height: 70%;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#messageInput {
+    width: 100%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#sendMessage {
+    padding: 5px 10px;
+}
+
+/* ... (rest of your styles) ... */

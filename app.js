@@ -223,6 +223,34 @@ generateLinkButton.addEventListener('click', () => {
         alert('Please select a subject to generate the link.');
     }
 });
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const PORT = 3000;
+
+// Simulated database (replace with a real database)
+const linksDB = {};
+
+app.use(bodyParser.json());
+
+// Endpoint for generating links
+app.post('/generate-link', (req, res) => {
+    const subject = req.body.subject;
+    const link = generateLink(subject);
+    linksDB[subject] = link;
+    res.json({ link });
+});
+
+function generateLink(subject) {
+    // Implement your secure link generation logic here
+    // Example: return `https://your-website.com/meeting/${subject}`
+    return `https://example.com/meeting/${subject}`;
+}
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+
 
 function generateLink(subject) {
     // Implement your link generation logic here
